@@ -17,6 +17,17 @@
       <div class="container page-header">
         <a class="header__logo"><span href="#" class="header__accent">Web</span>Studio</a>
         <nav>
+<!-- <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+  <svg width="40" height="40" aria-label="переключатель мобильного меню">
+    <use class="icon-cross" href="./image/icons.svg/symbol-menu.svg#icon-closepx"></use>
+    <use class="icon-menu" href="./image/icons.svg/symbol-menu.svg#icon-menupx"></use>
+  </svg>
+</button>
+
+<div class="menu-container" id="menu-container" data-menu>
+меню
+</div> -->
+
           <ul class="site-nav">
             <li class="site-nav__cell"><a href="#" class="site-nav__link">Студия</a></li>
             <li class="site-nav__cell"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -42,6 +53,9 @@
     </header>
 
     <main>
+            <!-- <div class="container">
+        <button type="button" data-modal-open>Открыть</button>
+      </div> -->
       <!-- H E R O -->
       <section class="hero">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -145,9 +159,7 @@
             <li class="section__item">
               <div class="details">
                 <svg class="details__icon" width="70" height="70">
-                  <use
-                    href="./image/icons.svg/symbol-defs.svg#icon-diagram"
-                  ></use>
+                  <use href="./image/icons.svg/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
               <h3 class="section__heading">Планирование</h3>
@@ -220,7 +232,7 @@
           <h2 class="features__subject">Наша команда</h2>
           <ul class="features__foto">
             <li class="features__face">
-              <img src="./image/img.jpg" alt="лицо мужчины" width="270" />
+              <img src="./image/img.jpg" alt="лицо мужчины"/>
               <div class="position">
                 <p class="position__team">Игорь Демьяненко</p>
                 <p class="position__desc">Product Designer</p>
@@ -271,7 +283,7 @@
 
 
             <li class="features__face">
-              <img src="./image/mimg.jpg" alt="лицо женщины" width="270" />
+              <img src="./image/mimg.jpg" alt="лицо женщины" />
               <div class="position">
                 <p class="position__team">Ольга Репина</p>
                 <p class="position__desc">Frontend Developer</p>
@@ -322,7 +334,7 @@
 
 
             <li class="features__face">
-              <img src="./image/imgm.jpg" alt="лицо мужчины" width="270" />
+              <img src="./image/imgm.jpg" alt="лицо мужчины" />
               <div class="position">
                 <p class="position__team">Николай Тарасов</p>
                 <p class="position__desc">Marketing</p>
@@ -373,7 +385,7 @@
 
 
             <li class="features__face">
-              <img src="./image/imgg.jpg" alt="лицо мужчины" width="270" />
+              <img src="./image/imgg.jpg" alt="лицо мужчины" />
               <div class="position">
                 <p class="position__team">Михаил Ермаков</p>
                 <p class="position__desc">UI Designer</p>
@@ -565,8 +577,13 @@
               </svg>
                    </div>
       </div>
+<!-- mobila -->
+            <div class="container">
+        <button type="button" data-modal-open>Открыть</button>
+      </div>
     </footer>
-     <script src="js/modal.js"></script>
+        <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
