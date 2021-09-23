@@ -1,39 +1,44 @@
-// /* кнопки */
-// .button {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
-// .button__filter {
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 50px;
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .button {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+}
+.button__filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
-// .button__text {
-//   padding: 6px 22px;
-//   margin-right: 8px;
+.button__text {
+  padding: 6px 22px;
+  margin-right: 8px;
 
-//   color: $title-text-color;
-//   background-color: #f5f4fa;
-//   align-items: center;
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.62;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   cursor: pointer;
-//   border-radius: 4px;
-//   border: none;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .button__text:hover,
-// .button__text:focus {
-//   color: $white-color;
-//   background: $accent-color;
-//   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//     0px 2px 2px rgba(0, 0, 0, 0.12);
-// }
+  color: $title-text-color;
+  background-color: #f5f4fa;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button__text:hover,
+.button__text:focus {
+  color: $white-color;
+  background: $accent-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
