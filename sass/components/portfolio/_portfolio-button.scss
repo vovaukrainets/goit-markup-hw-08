@@ -1,19 +1,31 @@
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .button {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+.button {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .button__filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
-
+.button__item {
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
 .button__text {
   padding: 6px 22px;
   margin-right: 8px;
