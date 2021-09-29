@@ -23,6 +23,9 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 3w70px;
+  }
 }
 .picture__item:hover,
 .picture__item:focus {
@@ -44,8 +47,10 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
-
 .card-overlay {
   top: 0;
   left: 0;
@@ -88,23 +93,31 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
   }
-}
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 
-// .picture__item:nth-child(3n) {
-//   margin-right: 0;
-// }
-.card-content__text {
-  width: 402px;
-  font-family: Roboto;
-  font-weight: 700;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-decoration: none;
-  color: $title-text-color;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 306px;
+  .picture__item:nth-child(3n) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+  .card-content__text {
+    width: 402px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: $title-text-color;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 306px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 322px;
+    }
   }
 }
 .card-content__title {
@@ -119,5 +132,8 @@
   text-decoration: none;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 306px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 322px;
   }
 }
