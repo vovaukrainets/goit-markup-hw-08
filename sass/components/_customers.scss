@@ -26,6 +26,8 @@
 }
 
 .customer__client {
+  margin-right: -30px;
+  margin-bottom: -30px;
   display: block;
   text-align: center;
   display: flex;
@@ -35,14 +37,15 @@
     justify-content: space-between;
   }
 }
-
+.customer__group {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
 .customer__icon {
   display: block;
   display: flex;
   width: 210px;
   height: 92px;
-  margin-right: 15px;
-  margin-bottom: 30px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
@@ -67,6 +70,9 @@
     fill: $accent-color;
   }
 }
+// .customer__icon:nth-child(6n) {
+//   margin-right: 0;
+// }
 
 .customer__id {
   fill: currentColor;

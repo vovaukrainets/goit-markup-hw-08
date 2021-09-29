@@ -4,6 +4,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 999;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -24,7 +25,9 @@
 .menu-button.is-open .icon-menu {
   display: none;
 }
-
+.menu-button .page-header {
+  display: none;
+}
 .menu-container {
   background-color: $white-color;
   text-align: center;
@@ -33,7 +36,7 @@
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
-    top: 15%;
+    top: 14%;
     left: 0;
     width: 100%;
     &.is-open {
@@ -73,8 +76,8 @@
     text-decoration: none;
     color: $title-text-color;
   }
-  &:hover,
-  &:focus {
+  .menu-nav__link:hover,
+  .menu-nav__link:focus {
     color: $accent-color;
   }
   @media screen and (min-width: 768px) {

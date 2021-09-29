@@ -9,6 +9,7 @@
 .practice__subject {
   margin-bottom: 50px;
   font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -31,6 +32,9 @@
 .practice__effigy:nth-child(3n) {
   margin-right: 0;
 }
+.sticky {
+  width: 370px;
+}
 
 /*  анимация  */
 
@@ -43,6 +47,7 @@
     bottom: 0;
     margin-bottom: 0;
     font-family: Roboto;
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
