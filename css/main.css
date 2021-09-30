@@ -604,7 +604,7 @@ body {
   .menu-container {
     display: none;
     position: absolute;
-    top: 14%;
+    top: 0;
     left: 0;
     width: 100%;
   }
@@ -2271,6 +2271,10 @@ h3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+.sticker {
+  z-index: 5;
 }
 
 .picture__item {
