@@ -4,7 +4,6 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 999;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -24,8 +23,10 @@
 .menu-button.is-open .icon-menu {
   display: none;
 }
+.icon-cross {
+  position: absolute;
+}
 .menu-button .page-header {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,10 +35,12 @@
   z-index: 999;
 }
 .menu-container {
+  position: fixed;
   background-color: $white-color;
   text-align: center;
   font-size: 20px;
-
+  padding-left: 15px;
+  padding-right: 15px;
   @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
@@ -59,15 +62,13 @@
   }
 }
 
-.navigation {
-  margin-bottom: 302px;
+.menu-nav {
+  padding-top: 48px;
+  text-align: left;
   @media screen and (min-width: 768px) {
     display: none;
   }
-}
-.menu-nav {
-  text-align: left;
-  &__cell {
+  &__cell:not(:last-child) {
     margin-bottom: 32px;
   }
   &__link {
@@ -84,21 +85,14 @@
   .menu-nav__link:hover,
   .menu-nav__link:focus {
     color: $accent-color;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.contact {
-  margin-top: auto;
-  @media screen and (min-width: 768px) {
-    display: none;
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
 .nav-menu {
   text-align: left;
   margin-bottom: 64px;
-
   &__call {
     margin-bottom: 32px;
     font-family: Roboto;
@@ -123,10 +117,10 @@
   }
 }
 .mesh-menu {
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: auto;
   padding-bottom: 48px;
-  &__toils {
+  display: flex;
+  .mesh-menu__toils {
     margin-right: 20px;
     font-family: Roboto;
     font-style: normal;
@@ -143,4 +137,7 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.underarm {
+  justify-content: space-between;
 }

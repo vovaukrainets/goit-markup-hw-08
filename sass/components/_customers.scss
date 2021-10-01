@@ -38,8 +38,9 @@
   }
 }
 .customer__group {
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 60px) / 4);
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 .customer__icon {
   display: block;
