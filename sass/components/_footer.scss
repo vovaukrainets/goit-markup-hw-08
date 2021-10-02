@@ -221,6 +221,12 @@ h3 {
 }
 .button-form__icon {
   position: absolute;
-  top: 13px;
-  left: 518px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 13px;
+    margin-left: -52px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 13px;
+    margin-left: 518px;
+  }
 }
