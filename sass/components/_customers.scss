@@ -10,7 +10,6 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
@@ -26,7 +25,7 @@
 }
 
 .customer__client {
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: -30px;
   display: block;
   text-align: center;
@@ -38,7 +37,7 @@
   }
 }
 .customer__group {
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
 }
 .customer__icon {
@@ -70,10 +69,6 @@
     fill: $accent-color;
   }
 }
-// .customer__icon:nth-child(6n) {
-//   margin-right: 0;
-// }
-
 .customer__id {
   fill: currentColor;
   color: #afb1b8;

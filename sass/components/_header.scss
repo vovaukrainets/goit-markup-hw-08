@@ -24,8 +24,8 @@
     padding-bottom: 16px;
   }
   @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 25px;
+    padding-bottom: 24px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -78,7 +78,6 @@
 
   display: flex;
   align-items: center;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -90,7 +89,9 @@
   }
 }
 .auth-nav .auth-nav__cells:not(:last-child) {
-  margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+  }
 }
 .auth-nav .auth-nav__cells:nth-last-child(4) {
   margin-right: 50;
@@ -107,7 +108,7 @@
   left: 0;
   bottom: 0;
   display: block;
-  bottom: -2px;
+  bottom: 0;
   width: 100%;
   height: 4px;
   background: $accent-color;
@@ -115,7 +116,7 @@
   opacity: 0;
   transform: scaleX(0);
 }
-.site-nav__link:hover::after,
+
 .site-nav__link:focus::after {
   transform: scaleX(1);
   opacity: 1;
@@ -144,7 +145,7 @@
     margin-left: 21px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 0px;
+    margin: 0px;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -165,9 +166,8 @@
   }
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
-    margin-right: 0;
+    margin: 0;
     padding-bottom: 32px;
-    margin-bottom: 0;
   }
 }
 /* aiming*/
