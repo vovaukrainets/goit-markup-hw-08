@@ -1,84 +1,60 @@
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  position: relative;
-  z-index: 830;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
+.menu-open {
+  border: unset;
+  background-color: unset;
+  font-size: 20px;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.menu-button .icon-cross {
-  display: none;
-}
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-.menu-button .page-header {
-  top: 0;
-  left: 0;
+.container-menu {
+  position: fixed;
+  background-color: $white-color;
   width: 100vw;
   height: 100vh;
-  @media screen and (min-width: 768px) {
-    display: none;
+  top: 0;
+  left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  z-index: 800;
+  .container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
-}
-.menu-container {
-  @media screen and (max-width: 767px) {
-    background-color: $white-color;
-
-    text-align: center;
-    font-size: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-    z-index: 700;
-    width: 0;
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    &.is-open {
-      display: block;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    @media screen and (min-width: 768px) {
+      display: none;
     }
   }
 }
-
-.icon-cross {
-  position: sticky;
+.container-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-close {
   position: absolute;
-  position: fixed;
-  z-index: 850;
+  right: 15px;
+  top: -40px;
+  border: none;
+  background-color: unset;
+  font-size: 20px;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.navigation {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.menu-nav {
-  padding-top: 48px;
-  text-align: left;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-  &__cell:not(:last-child) {
+
+.menu-nav__cell {
+  &:not(:last-child) {
     margin-bottom: 32px;
   }
-  &__link {
+  .menu-nav__link {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -89,59 +65,76 @@
     text-decoration: none;
     color: $title-text-color;
   }
-  .menu-nav__link:hover,
-  .menu-nav__link:focus {
-    color: $accent-color;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-nav__link:hover,
+.menu-nav__link:focus {
+  color: $accent-color;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.nav-menu {
+  margin-bottom: 64px;
+  .nav-menu__call {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
     @media screen and (min-width: 768px) {
       display: none;
     }
   }
 }
-.nav-menu {
-  text-align: left;
-  margin-bottom: 64px;
-  &__call {
-    margin-bottom: 32px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 34px;
-    line-height: 1.18;
-    letter-spacing: 0.02em;
-    color: $accent-color;
+.nav-menu__number {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $accent-color;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
-  &__info {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: $primary-text-color;
-  }
+}
+.nav-menu__post {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: $primary-text-color;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 .mesh-menu {
-  margin-top: auto;
-  padding-bottom: 48px;
   display: flex;
-  @media screen and (min-width: 767px) {
+  .mesh-menu__toils {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
+.mesh-menu__net:not(:first-child) {
+  margin-left: 10px;
+}
 .mesh-menu__toils {
-  padding-left: 10px;
   padding-right: 10px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: $accent-color;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
   @media screen and (min-width: 768px) {

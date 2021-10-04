@@ -25,36 +25,33 @@
           </ul>
         </nav>
 
-<button
-            type="button"
-            class="menu-button"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use class="icon-cross" href="./image/icons.svg/symbol-menu.svg#icon-closepx"></use>
+      <!-- M O B I L E - M E N U -->
+<button type="button" class="menu-open" data-menu-open>
+            <svg width="40" height="40">
               <use class="icon-menu" href="./image/icons.svg/symbol-menu.svg#icon-menupx"></use>
             </svg>
           </button>
 
-          <div class="menu-container" id="menu-container" data-menu>
-            <div class="navigation">
+        
+           <div class="container-menu" data-menu>
+             <div class="container">
+               <button type="button" class="menu-close" data-menu-close>
+            <svg width="40" height="40">
+                   <use class="icon-menu" href="./image/icons.svg/symbol-menu.svg#icon-closepx"></use>
+            </svg>
+               </button>
           <ul class="menu-nav">
             <li class="menu-nav__cell"><a href="./index.html" class="menu-nav__link">Студия</a></li>
             <li class="menu-nav__cell"><a href="#" class="menu-nav__link">Портфолио</a></li>
             <li class="menu-nav__cell"><a href="#" class="menu-nav__link">Контакты</a></li>
           </ul>
 
-            <div class="contacts">
+          <div class="menu-bottom">
           <ul class="nav-menu">
-            <li class="nav-menu__call">+38 096 111 11 11</li>
-            <li class="nav-menu__info">info@devstudio.com</li>
+            <li class="nav-menu__call"><a href="#" class="nav-menu__number">096 111 11 11</a></li>
+            <li class="nav-menu__info"><a href="#" class="nav-menu__post">info@devstudio.com</a></li>
           </ul>
+
 
 
        <ul class="mesh-menu">
@@ -63,9 +60,10 @@
              <li class="mesh-menu__net"><a href="#" class="mesh-menu__toils">Facebook</a></li>
             <li class="mesh-menu__net"><a href="#" class="mesh-menu__toils">LinkedIn</a></li>
           </ul> 
-</div>
-</div>
-      <ul class="auth-nav">
+          </div>
+          </div>
+          </div>     
+           <ul class="auth-nav">
           <li class="auth-nav__cells">
             <a href="" class="auth-nav__icon-smartphone">
               <svg class="auth-nav__envelope" width="16" height="12">
@@ -87,7 +85,7 @@
     </header>
     <main>
         <!--B U T T O N-->
-      <section class="container button">
+      <section class="button container">
         <h1 is hidden>Портфолио</h1>
         <ul class="button__filter">
           <li class="button__item">

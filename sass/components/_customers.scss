@@ -1,6 +1,7 @@
 .customer {
   padding-top: 60px;
   padding-bottom: 60px;
+  width: 100%;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -8,8 +9,6 @@
 }
 .customer__topic {
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
