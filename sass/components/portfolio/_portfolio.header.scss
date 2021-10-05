@@ -1,7 +1,12 @@
+.header {
+  @media screen and (min-width: 768px) {
+    border-bottom: 5px solid #ececec;
+  }
+}
+
 .page-header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 .header__logo {
   font-family: Raleway, sans-serif;
