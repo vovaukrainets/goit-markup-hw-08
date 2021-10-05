@@ -2,6 +2,7 @@
   border: unset;
   background-color: unset;
   font-size: 20px;
+  z-index: 999;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -15,13 +16,14 @@
   left: 0;
   padding-top: 48px;
   padding-bottom: 48px;
-  z-index: 800;
+  z-index: 998;
   .container {
     position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 999;
   }
   &.is-hidden {
     opacity: 0;
@@ -54,6 +56,9 @@
 .menu-nav__cell {
   &:not(:last-child) {
     margin-bottom: 32px;
+    &:hover {
+      color: $accent-color;
+    }
   }
   .menu-nav__link {
     font-family: Roboto;
@@ -65,13 +70,16 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: $title-text-color;
+    &:hover {
+      color: $accent-color;
+    }
   }
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.menu-nav__link:hover,
-.menu-nav__link:focus {
+.menu-nav:hover,
+.menu-nav:focus {
   color: $accent-color;
   @media screen and (min-width: 768px) {
     display: none;
@@ -144,4 +152,8 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.menu-open .menu-close :hover,
+.menu-open .menu-close :focus {
+  fill: $accent-color;
 }
