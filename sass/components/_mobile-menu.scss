@@ -45,6 +45,7 @@
   border: none;
   background-color: unset;
   font-size: 20px;
+  z-index: 999;
   @media screen and (min-width: 768px) {
     display: none;
   }
