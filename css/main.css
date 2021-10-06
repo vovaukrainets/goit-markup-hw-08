@@ -655,6 +655,10 @@ body {
   color: #212121;
 }
 
+.menu-nav__cell .menu-nav__link .current {
+  color: #2196f3;
+}
+
 .menu-nav__cell .menu-nav__link:hover, .menu-nav__cell .menu-nav__link:focus {
   color: #2196f3;
 }
